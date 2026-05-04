@@ -1,19 +1,22 @@
 name: Hello world
-on: push
+on: [push]
+
 jobs:
- build:
-   runs-on: ubuntu-latest
-   steps:
-     - name: build
-     run: echo "Hello World"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: echo "Hello World"
+
   test:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: test
-       run: echo"run test"
+        run: echo "run test"
+
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: deploy
-       run: echo "deploying the app"
+        run: echo "deploying the app"
     
