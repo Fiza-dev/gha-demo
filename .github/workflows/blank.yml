@@ -4,5 +4,16 @@ jobs:
  build:
    runs-on: ubuntu-latest
    steps:
-   - name: hello-steps
+   - name: build
      run: echo "Hello World"
+  test:
+    runs-on: ubuntu-latest
+    steps: 
+     - name: test
+       run: echo"run test"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     - name: deploy
+       run: echo"deploying the app"
+    
