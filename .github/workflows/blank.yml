@@ -8,17 +8,4 @@ jobs:
       - name: build
         run: echo "Hello World"
 
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: test
-        run: echo "run test"
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: deploy
-        run: echo "deploying the app"
     
